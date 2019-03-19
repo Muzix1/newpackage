@@ -10,7 +10,6 @@ def bubble_sort(items):
 
 def merge_sort(items):
     '''Return array of items, sorted in ascending order'''
-    print("Splitting ",items)
     if len(items)>1:
         mid = len(items)//2
         lefthalf = items[:mid]
@@ -40,7 +39,6 @@ def merge_sort(items):
             items[k]=righthalf[j]
             j=j+1
             k=k+1
-    print("Merging ",items)
     return items
 
 def quick_sort(items):
@@ -59,8 +57,6 @@ def quick_sort(items):
             else: 
                 if x > pivot:
                     greater.append(x)
-        # Don't forget to return something!
-        return quick_sort(less)+equal+quick_sort(greater)  # Just use the + operator to join lists
-    # Note that you want equal ^^^^^ not pivot
-    else:  # You need to hande the part at the end of the recursion - when you only have one element in your array, just return the array.
+        return quick_sort(less)+equal+quick_sort(greater)   
+    else:  
         return items
