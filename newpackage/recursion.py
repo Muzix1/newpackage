@@ -24,5 +24,3 @@ def reverse(word):
     '''Return word in reverse'''
     reversed = word[::-1]
     return reversed
-
-
