@@ -1,0 +1,9 @@
+README.md
+setup.py
+newpackage/__init__.py
+newpackage/recursion.py
+newpackage/sorting.py
+newpackage.egg-info/PKG-INFO
+newpackage.egg-info/SOURCES.txt
+newpackage.egg-info/dependency_links.txt
+newpackage.egg-info/top_level.txt
